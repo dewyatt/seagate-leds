@@ -46,7 +46,7 @@ Features:
 	[0x37] LED Control
 	[0x38] LED Capacity Control
 Interfaces:
-	[0x08] USBMiniB [active]```
+	[0x08] USBMiniB [active]
 ```
 ### led
 Get
