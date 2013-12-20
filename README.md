@@ -30,7 +30,7 @@ Info is the only command that will probably work without special prvileges.
 
 ### info
 ```
-$ ./seagate-led /dev/sdb info
+$ ./seagate-leds /dev/sdb info
 0BC2:50A7 Seagate GoFlex Desk (SB22)
 Supported VPD Pages:
   [0x00] Standard Inquiry
@@ -51,24 +51,24 @@ Interfaces:
 ### led
 Get
 ```
-# ./seagate-led /dev/sdb led
+# ./seagate-leds /dev/sdb led
 led: on
 ```
 Set
 ```
-# ./seagate-led /dev/sdb led off
+# ./seagate-leds /dev/sdb led off
 ```
 Available arguments are 'on, off, 1, 0'.
 
 ### capacity-led
 Get
 ```
-# ./seagate-led /dev/sdb capacity-led
+# ./seagate-leds /dev/sdb capacity-led
 0000
 ```
 Set
 ```
-# ./seagate-led /dev/sdb capacity-led 1001
+# ./seagate-leds /dev/sdb capacity-led 1001
 ```
 This command accepts 3 types of arguments:
 * Percent (as in, 90% full)
