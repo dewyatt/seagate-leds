@@ -63,12 +63,12 @@ Available arguments are 'on, off, 1, 0'.
 ### capacity-led
 Get
 ```
-# ./seatool /dev/sdb capacity-led
+# ./seagate-led /dev/sdb capacity-led
 0000
 ```
 Set
 ```
-# ./seatool /dev/sdb capacity-led 1001
+# ./seagate-led /dev/sdb capacity-led 1001
 ```
 This command accepts 3 types of arguments:
 * Percent (as in, 90% full)
