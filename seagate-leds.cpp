@@ -463,7 +463,7 @@ const char *gen_fryqrp ( const char *serial ) {
 }
 
 const char *get_dlfndr_url ( const char *serial ) {
-	static char buffer[128] =  "https://apps1.seagate.com/downloads/request.html?userPreferredLocaleCookie=en_EN_&fryqrp=";
+	static char buffer[128] =  "https://apps1.seagate.com/downloads/request.html?fryqrp=";
 	strncat ( buffer, gen_fryqrp ( serial ), sizeof ( buffer ) );
 	return buffer;
 }
