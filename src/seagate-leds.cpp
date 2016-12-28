@@ -77,14 +77,23 @@ struct Device {
 
 void show_usage () {
 	fprintf ( stderr, "Usage: %s <device> <info|led|capacity-led> [value]\n", prog_name );
+	fprintf ( stderr, "\nNOTES:\n" );
+	fprintf ( stderr, "    Some of these commands are likely to fail without root. Use sudo.\n" );
+	fprintf ( stderr, "    Use lsblk to find your device. Example: lsblk -o name,size,type,uuid,mountpoint\n" );
+	fprintf ( stderr, "    It is safer to use /dev/disk/by-uuid/ or similar device paths, but /dev/sd* will work.\n\n" );
 	fprintf ( stderr, "Examples:\n" );
-	fprintf ( stderr, "\t%s /dev/disk/by-label/goflex info\n", prog_name);
-	fprintf ( stderr, "\n" );
-	fprintf ( stderr, "\t%s /dev/disk/by-label/goflex led\n", prog_name);
-	fprintf ( stderr, "\t%s /dev/disk/by-label/goflex led on\n", prog_name);
-	fprintf ( stderr, "\n" );
-	fprintf ( stderr, "\t%s /dev/disk/by-label/goflex capacity-led 15\n", prog_name );
-	fprintf ( stderr, "\t%s /dev/disk/by-label/goflex capacity-led 90%%\n", prog_name );
+	fprintf ( stderr, "    Query for the capabilities and information of the drive:\n" );
+	fprintf ( stderr, "        %s /dev/sdf info\n\n", prog_name);
+	fprintf ( stderr, "    Query the status of the activity LED.\n" );
+	fprintf ( stderr, "        %s /dev/disk/by-label/goflex led\n\n", prog_name);
+	fprintf ( stderr, "    Turn the activity LED on.\n" );
+	fprintf ( stderr, "        %s /dev/disk/by-label/goflex led on\n\n", prog_name);
+	fprintf ( stderr, "    Query the capacity LEDs status.\n" );
+	fprintf ( stderr, "        %s /dev/disk/by-label/goflex capacity-led\n\n", prog_name );
+	fprintf ( stderr, "    Set the capacity LEDs to a decimal value.\n" );
+	fprintf ( stderr, "        %s /dev/disk/by-label/goflex capacity-led 15\n\n", prog_name );
+	fprintf ( stderr, "    Set the capacity LEDs to indicate 90%% full.\n" );
+	fprintf ( stderr, "        %s /dev/disk/by-label/goflex capacity-led 90%%\n", prog_name );
 }
 
 void trim ( char *s, size_t length ) {
