@@ -74,3 +74,11 @@ This command accepts 3 types of arguments:
 * Percent (as in, 90% full)
 * Binary (requires 4 digits: 1010)
 * Decimal input (ex: 15)
+
+## Donations
+
+If you want to support this software, please consider sending some bitcoins my way.
+
+![Donate](https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=bitcoin:1KHcEwfZbMmZqkpsbv2YGBzvkqZFYUjnZW)
+
+1KHcEwfZbMmZqkpsbv2YGBzvkqZFYUjnZW
