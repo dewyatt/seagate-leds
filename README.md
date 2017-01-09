@@ -79,6 +79,6 @@ This command accepts 3 types of arguments:
 
 If you want to support this software, please consider sending some bitcoins my way.
 
-![Donate](https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=bitcoin:1KHcEwfZbMmZqkpsbv2YGBzvkqZFYUjnZW)
+![Donate](https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=bitcoin:1KHcEwfZbMmZqkpsbv2YGBzvkqZFYUjnZW)
 
 1KHcEwfZbMmZqkpsbv2YGBzvkqZFYUjnZW
